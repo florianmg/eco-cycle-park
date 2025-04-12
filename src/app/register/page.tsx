@@ -37,7 +37,7 @@ export default function RegisterPage() {
       const userCredential = await createUserWithEmailAndPassword(auth, data.email, data.password)
 
       if (userCredential.user) {
-        router.push('/dashboard')
+        router.push('/app')
       }
     } catch (err) {
       setError("Une erreur est survenue lors de l'inscription")
@@ -56,7 +56,7 @@ export default function RegisterPage() {
       const result = await signInWithPopup(auth, provider)
 
       if (result.user) {
-        router.push('/dashboard')
+        router.push('/app')
       }
     } catch (err) {
       setError('Une erreur est survenue lors de la connexion avec Google')
