@@ -45,9 +45,6 @@ export default function Navbar() {
                 <li>
                   <Link href="/tarifs">Tarifs</Link>
                 </li>
-                <li>
-                  <Link href="/contact">Contact</Link>
-                </li>
               </>
             )}
           </ul>
@@ -69,9 +66,6 @@ export default function Navbar() {
               </li>
               <li>
                 <Link href="/tarifs">Tarifs</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
               </li>
             </>
           )}

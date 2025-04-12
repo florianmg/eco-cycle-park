@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -8,7 +10,9 @@ export default function Home() {
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">Eco Cycle Park</h1>
             <p className="mb-5">Le premier parking à vélo souterrain intelligent et sécurisé de votre ville.</p>
-            <button className="btn btn-primary">Réserver maintenant</button>
+            <Link href="/app" className="btn btn-primary">
+              Réserver maintenant
+            </Link>
           </div>
         </div>
       </div>
