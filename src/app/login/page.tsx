@@ -120,7 +120,12 @@ export default function LoginPage() {
 
               <div className="divider">OU</div>
 
-              <button className="btn btn-outline w-full gap-2" onClick={handleGoogleSignIn} disabled={isLoading}>
+              <button
+                type="button"
+                className="btn btn-outline w-full gap-2"
+                onClick={handleGoogleSignIn}
+                disabled={isLoading}
+              >
                 {isLoading ? (
                   <span className="loading loading-spinner"></span>
                 ) : (
